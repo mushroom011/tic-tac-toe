@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Tic-Tac-Toe</h2>
+    </div>
+    <main class="main">
+      <div id="initialScreen" class="initial-screen">
+        <p class="initial-screen__text"><span class="O">Choose Player</span> (X plays first)</p>
+        <div id="player-marks" class="player-marks">
+          <button class="square X" data-mark="X">X</button>
+          <button class="square O" data-mark="O">O</button>
+        </div>
+      </div>
+      <div id="scoreContainer" class="disabled">
+        <div class="score">
+          <p>Player X - <span id="x-score" class="score-number">0</span></p>
+          <p>Draw  - <span id="draw-score" class="score-number">0</span></p>
+          <p>Player O - <span id="o-score" class="score-number">0</span></p>
+        </div>
+      </div>
+      <div id="gameBoardWrapper" class="game-board-wrapper disabled">
+        <div id="gameBoardContainer" class="game-board-container"></div>
+      </div>
+    </main>
+    <div id="btnPanel" class="btn-panel disabled">
+      <button id="nextRound" class="btn">Next Round</button>
+      <button id="resetGame" class="btn">Reset Game</button>
+    </div>
+    <div class="footer">
+      Copyright © Mushroom011
+    </div>
+  </body>
+</html>
